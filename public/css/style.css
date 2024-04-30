@@ -11030,3 +11030,26 @@ Sidebar
   font-size: 12px;
   line-height: 1rem;
 }
+.form-btn .btn-style-one{
+  width: 100% !important;
+}
+.hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hr-container hr {
+  width: 100px; /* Adjust width as needed */
+  margin: 0;
+}
+.hr-container .hr-text{
+  font-size: 15px;
+  padding: 0 5px;
+}
+.form-redirect p{
+  font-size: 15px;
+}
+.form-redirect a{
+  color: var(--theme-color1);
+}

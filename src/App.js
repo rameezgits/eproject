@@ -15,6 +15,8 @@ import RoomDetails from './pages/RoomDetails';
 import Team from './pages/Team';
 import Faq from './pages/Faq';
 import Booking from './pages/Booking';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
           <Route path='/faq' element={<Faq/>}/>
           <Route path='/rooms-suits' element={<RoomSuits/>}/>
           <Route path='/room-details' element={<RoomDetails/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Signup/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

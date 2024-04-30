@@ -1,7 +1,11 @@
 import React from 'react'
 import Header from '../components/Header'
+import { useEffect } from 'react'
 
 const News = () => {
+    useEffect(() => {
+        document.title = "Hoexr | News"
+    }, []);
     return (
         <div>
             <Header pageTitle="News" />

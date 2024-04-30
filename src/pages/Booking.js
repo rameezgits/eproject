@@ -1,7 +1,11 @@
 import React from 'react'
 import Header from '../components/Header'
+import { useEffect } from 'react';
 
 const Booking = () => {
+    useEffect(() => {
+        document.title = "Hoexr | Book Now"
+    }, []);
     return (
         <div>
             <section>
@@ -93,72 +97,36 @@ const Booking = () => {
                                                         <div class="row clearfix">
                                                             <div class="col-lg-6 col-md-6 col-sm-12 column">
                                                                 <div class="field-input mb-3">
-                                                                    <input type="text" class="form-control" name="name" placeholder="Name on the Card" required="" fdprocessedid="agairb"/>
+                                                                    <label class="form-label">Check In</label>
+                                                                    <input type="text" class="form-control" name="name" placeholder="Arrive Date" required="" fdprocessedid="agairb"/>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-12 column">
+                                                                <label class="form-label">Check Out</label>
                                                                 <div class="field-input mb-3">
-                                                                    <input type="text" class="form-control" name="number" placeholder="Card Number" required="" fdprocessedid="yzi04"/>
+                                                                    <input type="text" class="form-control" name="number" placeholder="Departure Date" required="" fdprocessedid="yzi04"/>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-3 col-md-6 col-sm-12 column">
-                                                                <div class="field-input mb-3">
-                                                                    <input type="text" class="form-control" name="date" placeholder="Expiry Date" required="" fdprocessedid="xer44h"/>
-                                                                </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 column">
+                                                                <label class="form-label">Guests</label>
+
+                                                                <select class="form-select form-control">
+                                                                <option selected="" disabled="" value="">Select</option>
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>More</option>
+                                                            </select>
                                                             </div>
-                                                            <div class="col-lg-3 col-md-6 col-sm-12 column">
-                                                                <div class="field-input mb-3">
-                                                                    <input type="text" class="form-control" name="code" placeholder="Security Code" required="" fdprocessedid="8kjccs"/>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6 col-md-12 col-sm-12 column">
+                                                            
+                                                            
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 column" style={{transform: 'translateY(37px)'}}>
                                                                 <div class="field-input message-btn">
-                                                                    <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..." fdprocessedid="mzf5a7"><span class="btn-title">Make Payment</span></button>
+                                                                    <button type="submit" class="theme-btn btn-style-one" fdprocessedid="mzf5a7"><span class="btn-title">Book Now</span></button>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><i class="lnr-icon-chevron-down"></i></div>
-                                                    Direct Bank Transfer
-                                                </div>
-                                                <div class="acc-content">
-                                                    <div class="payment-info">
-                                                        <p class="mb-0">Make your payment directly into our bank account.
-                                                            Please use your Order ID as the payment reference. Your order
-                                                            won’t be shipped until the funds have cleared in our account.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><i class="lnr-icon-chevron-down"></i></div>
-                                                    Cheque Payment
-                                                </div>
-                                                <div class="acc-content">
-                                                    <div class="payment-info">
-                                                        <p class="mb-0">Make your payment directly into our bank account.
-                                                            Please use your Order ID as the payment reference. Your order
-                                                            won’t be shipped until the funds have cleared in our account.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><i class="lnr-icon-chevron-down"></i></div>
-                                                    Other Payment
-                                                </div>
-                                                <div class="acc-content">
-                                                    <div class="payment-info">
-                                                        <p class="mb-0">Make your payment directly into our bank account.
-                                                            Please use your Order ID as the payment reference. Your order
-                                                            won’t be shipped until the funds have cleared in our account.
-                                                        </p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -171,6 +139,7 @@ const Booking = () => {
                 </div>
             </section>
         </div>
+        
     )
 }
 

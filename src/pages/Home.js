@@ -1,5 +1,9 @@
 import React from 'react'
 import Header from '../components/Header'
+
+const handleRoomsSuitsClick = () => {
+    window.location.href = '/rooms-suits';
+};
 const Home = () => {
   return (
     <div>
@@ -13,7 +17,7 @@ const Home = () => {
                                 luxury hotel</span>
                             <h1 data-animation-in="fadeInUp" data-delay-in="0.3">life enjoy with <br/>the great moments
                             </h1>
-                            <a href="page-about.html" class="btn" data-animation-in="fadeInUp" data-delay-in="0.5">rooms
+                            <a href="#" onClick={handleRoomsSuitsClick} class="btn" data-animation-in="fadeInUp" data-delay-in="0.5">rooms
                                 & suites</a>
                         </div>
                     </div>

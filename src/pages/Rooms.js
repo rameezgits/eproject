@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 
+const handleBookClick = () => {
+    window.location.href = '/booking';
+};
+
 const Rooms = () => {
+    useEffect(() => {
+        document.title = "Hoexr | Rooms"
+    }, []);
     return (
         <div>
             <Header pageTitle="Rooms" />
@@ -15,11 +22,11 @@ const Rooms = () => {
                                     <figure class="image-2 overlay-anim"><img src="images/resource/room-1.jpg" alt=""/></figure>
                                 </div>
                                 <div class="content-box">
-                                    <h6 class="title"><a href="room-details.html">Junior Suite</a></h6>
+                                    <h6 class="title"><a href="#">Junior Suite</a></h6>
                                     <span class="price">150$ / NIGHT</span>
                                 </div>
                                 <div class="box-caption">
-                                    <a href="room-details.html" title="" class="book-btn">book now</a>
+                                    <a href="#" onClick={handleBookClick} title="" class="book-btn">book now</a>
                                     <ul class="bx-links">
                                         <li><a href="room-details.html" title=""><i class="fa fa-wifi"></i></a></li>
                                         <li><a href="room-details.html" title=""><i class="fa fa-bed"></i></a></li>
@@ -36,11 +43,11 @@ const Rooms = () => {
                                     <figure class="image-2 overlay-anim"><img src="images/resource/room-2.jpg" alt=""/></figure>
                                 </div>
                                 <div class="content-box">
-                                    <h6 class="title"><a href="room-details.html">Family Room</a></h6>
+                                    <h6 class="title"><a href="#">Family Room</a></h6>
                                     <span class="price">200$ / NIGHT</span>
                                 </div>
                                 <div class="box-caption">
-                                    <a href="room-details.html" title="" class="book-btn">book now</a>
+                                    <a href="#" title="" onClick={handleBookClick} class="book-btn">book now</a>
                                     <ul class="bx-links">
                                         <li><a href="room-details.html" title=""><i class="fa fa-wifi"></i></a></li>
                                         <li><a href="room-details.html" title=""><i class="fa fa-bed"></i></a></li>
@@ -57,11 +64,11 @@ const Rooms = () => {
                                     <figure class="image-2 overlay-anim"><img src="images/resource/room-3.jpg" alt=""/></figure>
                                 </div>
                                 <div class="content-box">
-                                    <h6 class="title"><a href="room-details.html">Double Room</a></h6>
+                                    <h6 class="title"><a href="#">Double Room</a></h6>
                                     <span class="price">250$ / NIGHT</span>
                                 </div>
                                 <div class="box-caption">
-                                    <a href="room-details.html" title="" class="book-btn">book now</a>
+                                    <a href="#" onClick={handleBookClick} title="" class="book-btn">book now</a>
                                     <ul class="bx-links">
                                         <li><a href="room-details.html" title=""><i class="fa fa-wifi"></i></a></li>
                                         <li><a href="room-details.html" title=""><i class="fa fa-bed"></i></a></li>
@@ -78,11 +85,11 @@ const Rooms = () => {
                                     <figure class="image-2 overlay-anim"><img src="images/resource/room-4.jpg" alt=""/></figure>
                                 </div>
                                 <div class="content-box">
-                                    <h6 class="title"><a href="room-details.html">Double Room</a></h6>
+                                    <h6 class="title"><a href="#">Double Room</a></h6>
                                     <span class="price">250$ / NIGHT</span>
                                 </div>
                                 <div class="box-caption">
-                                    <a href="room-details.html" title="" class="book-btn">book now</a>
+                                    <a href="#" onClick={handleBookClick} title="" class="book-btn">book now</a>
                                     <ul class="bx-links">
                                         <li><a href="room-details.html" title=""><i class="fa fa-wifi"></i></a></li>
                                         <li><a href="room-details.html" title=""><i class="fa fa-bed"></i></a></li>
@@ -99,11 +106,11 @@ const Rooms = () => {
                                     <figure class="image-2 overlay-anim"><img src="images/resource/room-5.jpg" alt=""/></figure>
                                 </div>
                                 <div class="content-box">
-                                    <h6 class="title"><a href="room-details.html">Deluxe Room</a></h6>
+                                    <h6 class="title"><a href="#">Deluxe Room</a></h6>
                                     <span class="price">300$ / NIGHT</span>
                                 </div>
                                 <div class="box-caption">
-                                    <a href="room-details.html" title="" class="book-btn">book now</a>
+                                    <a href="#" onClick={handleBookClick} title="" class="book-btn">book now</a>
                                     <ul class="bx-links">
                                         <li><a href="room-details.html" title=""><i class="fa fa-wifi"></i></a></li>
                                         <li><a href="room-details.html" title=""><i class="fa fa-bed"></i></a></li>

@@ -82,8 +82,7 @@ const Navbar = () => {
                                         </ul>
                                         <div class="dropdown-btn"><i class="fa fa-angle-down"></i></div>
                                     </li>
-                                    <li ><a href="#" onClick={handleNewsClick}>News</a></li>
-                                    
+                                    <li ><a href="#" onClick={handleNewsClick}>News</a></li>   
                                     <li><a href="#" onClick={handleContactClick}>Contact</a></li>
                                 </ul>
                             </nav>

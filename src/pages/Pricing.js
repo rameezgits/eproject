@@ -1,7 +1,11 @@
 import React from 'react'
 import Header from '../components/Header'
+import { useEffect } from 'react';
 
 const Pricing = () => {
+    useEffect(() => {
+        document.title = "Hoexr | Pricing"
+    }, []);
     return (
         <div>
             <Header pageTitle="About Us" />

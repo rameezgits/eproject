@@ -1,7 +1,15 @@
 import React from 'react'
 import Header from '../components/Header'
+import { useEffect } from 'react';
+
+const handleBooking = () => {
+  window.location.href = '/booking';
+};
 
 const RoomDetails = () => {
+  useEffect(() => {
+    document.title = "Hoexr | Room Details"
+}, []);
   return (
     <div>
       <Header pageTitle="Room Details" />
@@ -196,7 +204,9 @@ const RoomDetails = () => {
                     </div>
                     <div class="mb-3">
                       <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                      <button type="submit" class="theme-btn btn-style-one w-100" data-loading-text="Please wait..."><span class="btn-title">Book Now</span></button>
+                    
+                        <a href='#' class="btn-title theme-btn btn-style-one w-100" onClick={handleBooking}>Book Now</a>
+              
                     </div>
                   </form>
                 </div>
